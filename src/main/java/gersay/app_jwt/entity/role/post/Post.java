@@ -1,2 +1,4 @@
-package gersay.app_jwt.entity.post;public interface Post {
+package gersay.app_jwt.entity.role.post;
+
+public interface Post {
 }

@@ -1,19 +1,14 @@
-package gersay.app_jwt.entity;
+package gersay.app_jwt.entity.role;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.Data;
-import org.springframework.security.core.GrantedAuthority;
+import gersay.app_jwt.entity.role.roletype.PostRoleType;
+
+import java.util.Set;
 
 
-@Data
-@Entity
-@Table(name = "roles")
-public class Role implements GrantedAuthority {
+public interface Role {
+    boolean includes(Role role);
 
-    
-    @Override
-    public String getAuthority() {
-        return null;
+    static Set<Role> roots() {
+        return Set.of(PostRoleType.ADMIN);
     }
 }

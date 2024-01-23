@@ -1,2 +1,4 @@
-package gersay.app_jwt.entity.community;public interface Community {
+package gersay.app_jwt.entity.role.community;
+
+public interface Community {
 }

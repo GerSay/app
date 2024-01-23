@@ -5,7 +5,7 @@ import gersay.app_jwt.entity.role.Role;
 import java.util.HashSet;
 import java.util.Set;
 
-public enum UserRoleType implements Role {
+public enum CommunityRoleType implements Role {
     VIEWER, EDITOR, REPORTER;
 
     private final Set<Role> child = new HashSet<>();

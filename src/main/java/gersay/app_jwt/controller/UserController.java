@@ -1,2 +1,17 @@
-package gersay.app_jwt.controller;public class UserController {
+package gersay.app_jwt.controller;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/user")
+@RequiredArgsConstructor
+public class UserController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello, User!";
+    }
 }

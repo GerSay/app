@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public enum AdminRoleType implements Role {
+public enum PostRoleType implements Role {
     ADMIN, MODERATOR;
 
     private final Set<Role> child = new HashSet<>();
